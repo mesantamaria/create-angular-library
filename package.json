@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:lib": "ng build my-lib"
+    "build:lib": "ng build my-lib",
+    "publish:lib": "ng build my-lib --prod && cd dist/my-lib && npm publish"
   },
   "private": true,
   "dependencies": {
