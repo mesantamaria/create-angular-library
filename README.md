@@ -4,16 +4,16 @@
 
 1. Crear workspace `ng new <workspace-name> --create-application=false`
 2. Generar librería `ng g library <library-name>`
-  * Crea la librería dentro de la carpeta `projects`
+    * Crea la librería dentro de la carpeta `projects`
 
 ## Testear librería
 1. Generar app para testear la librería `ng g application <app-name>`
-  * Crea una app angular dentro de la carpeta `projects`
+    * Crea una app angular dentro de la carpeta `projects`
 2. Para usar la librería hay que correr: `ng build my-lib`
-  * Hace el build de la librería en la carpeta dist
+    * Hace el build de la librería en la carpeta dist
 3. Ir a `projects/<app-name>/src/app/app.module.ts` e importar la librería:
-  * `import { MyLibModule } from 'my-lib';`
-  * Agregar MyLibModule a los imports de la clase AppModule
+    * `import { MyLibModule } from 'my-lib';`
+    * Agregar MyLibModule a los imports de la clase AppModule
 4. Ahora puedes usar el componente de my-lib en cualquier parte de tu app con `<lib-my-lib></lib-my-lib>`
 5. Cada vez que se haga un cambio en la librería, correr `ng build my-lib` o correr una vez `ng build my-lib --watch`
 
