@@ -17,6 +17,12 @@
 4. Ahora puedes usar el componente de my-lib en cualquier parte de tu app con `<lib-my-lib></lib-my-lib>`
 5. Cada vez que se haga un cambio en la librería, correr `ng build my-lib` o correr una vez `ng build my-lib --watch`
 
+## Crear nuevos componentes
+1. `ng g component <component-name> --project=my-lib`
+    * Para crearlo dentro de una carpeta `ng g component <folder-name/component-name> --project=my-lib`
+2. Exportarlo desde archivo `public-api.ts`
+3. Agregar el component a los exports del NgModule de la librería (en el ejemplo `my-lib.module.ts`)
+
 ## Usar librería en otro workspace o app
 ### Opción 1: Crear paquete tgz
 1. `cd dist/my-lib`
